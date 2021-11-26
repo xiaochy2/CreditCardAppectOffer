@@ -16,8 +16,8 @@ const worker = setInterval(function() {
  * Chase accept offer script
  */
 const worker = setInterval(function() { 
-  const offer = document.querySelector('.sixersoffers__cta')
-  if (offer && offer.innerText === "Add to card") {
+  const offer = document.querySelector("mds-button[icon-type='ico_add_circle']")
+  if (offer) {
     offer.click() 
     setTimeout(function(){document.querySelector('#flyoutClose').click()},2000)
   } else {
