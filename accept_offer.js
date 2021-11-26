@@ -2,7 +2,7 @@
  * Amex accept offer script
  */
 const worker = setInterval(function() { 
-  const offer = document.querySelector('[title="Add to Card"]')
+  const offer = document.querySelector('[title="Activate Offer"]')
   if (offer) {
     offer.click() 
   } else {
