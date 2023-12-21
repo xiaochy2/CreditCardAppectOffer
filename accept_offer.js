@@ -2,7 +2,7 @@
  * Amex accept offer script
  */
 const worker = setInterval(function() { 
-  const offer = document.querySelector('[title="Activate Offer"]')
+  const offer = document.querySelector('[title="Add to Card"]')
   if (offer) {
     offer.click() 
   } else {
@@ -16,7 +16,7 @@ const worker = setInterval(function() {
  * Chase accept offer script
  */
 const worker = setInterval(function() { 
-  const offer = document.querySelector("mds-button[icon-type='ico_add_circle']")
+  const offer = document.querySelector("mds-icon[type='ico_add_circle']")
   if (offer) {
     offer.click() 
     setTimeout(function(){document.querySelector('#flyoutClose').click()},2000)
